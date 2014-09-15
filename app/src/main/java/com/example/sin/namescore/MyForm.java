@@ -15,8 +15,8 @@ public class MyForm extends Activity {
 
     public final static String EXTRA_MYNAME ="com.example.sin.namescore.MYNAME";
 
-    private Button m_button;
-    private MediaPlayer m_mediaPlayer;
+    //private Button m_button;
+    //private MediaPlayer m_mediaPlayer;
 
 
 
@@ -25,6 +25,7 @@ public class MyForm extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_form);
 
+        /*
         m_button = (Button)findViewById(R.id.myButton);
 
         m_mediaPlayer = MediaPlayer.create(this,R.raw.results01);
@@ -35,6 +36,9 @@ public class MyForm extends Activity {
             }
 
         });
+        */
+
+
     }
     public void getScore(View v) {
         EditText myEditText = (EditText) findViewById(R.id.myEditText);
