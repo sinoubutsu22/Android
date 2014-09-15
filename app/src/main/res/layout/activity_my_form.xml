@@ -1,0 +1,22 @@
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/myEditText"
+        android:layout_weight="1"
+        android:hint=" your name... " />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/myButton"
+        android:hint=" your name..."
+        android:onClick="getScore" />
+
+</LinearLayout>
