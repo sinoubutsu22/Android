@@ -37,9 +37,6 @@ public class MyForm extends Activity {
             }
 
         });
-
-
-
     }
     public void getScore(View v) {
         EditText myEditText = (EditText) findViewById(R.id.myEditText);
