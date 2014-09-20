@@ -1,5 +1,6 @@
 package com.example.sin.namescore;
 
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -24,6 +25,19 @@ public class MyForm extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_form);
+
+        Button button =(Button)findViewById(R.id.myButton);
+        ObjectAnimator animator =ObjectAnimator.ofFloat(button,"y",0f,600f);
+        EditText editText =(EditText)findViewById(R.id.myEditText);
+        ObjectAnimator animator1 =ObjectAnimator.ofFloat(editText,"y",0f,600f);
+
+        animator.setDuration(3000);
+        animator1.setDuration(6000);
+        animator.start();
+        animator1.start();
+
+
+
 
 
         m_button = (Button)findViewById(R.id.myButton);
