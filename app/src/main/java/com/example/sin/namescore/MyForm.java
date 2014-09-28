@@ -37,9 +37,6 @@ public class MyForm extends Activity {
         animator1.start();
 
 
-
-
-
         m_button = (Button)findViewById(R.id.myButton);
 
         m_mediaPlayer = MediaPlayer.create(this,R.raw.results01);
